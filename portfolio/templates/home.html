@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%}
+    Home
+{% endblock %}
+
+{% block body %}
+    <div id="img-me">
+        <img src="{% static '/media/julian.jpg' %}">
+    </div> 
+    
+    <div id="about-me">
+        <h1 id="icon-about">&#x1F579;</h1>
+        <h1>I'M<br>JULIAN<br>BACK-END<br> DEVELOPER
+        </h1>
+    </div>
+
+    <div id="social">
+        <a href="https://github.com/felipemadeit"><i class="fab fa-github icon"></i></a>
+        <a href="https://www.linkedin.com/in/julian-felipe/"><i class="fab fa-linkedin icon"></i></a>
+    </div>
+
+    <div id="stack">
+        <h2>MY<br>STACK</h2>
+        <h2 id="pin">&#x1F4CC</h2>
+      <div id="icons">
+        <div class="tarjeta"><i class="fab fa-html5"></i></div>
+        <div class="tarjeta"><i class="fab fa-css3-alt"></i></div>
+        <div class="tarjeta"><i class="fab fa-python"></i></div>
+        <div class="tarjeta"><img src="{% static '/media/django.png' %}"></div>
+        <div class="tarjeta"><img src="{% static '/media/mysql.png' %}" alt="logo-mysql"></div>
+        <div class="tarjeta"><i class="fab fa-java"></i>
+        </div>
+      </div>
+
+       </div>
+    </div>
+{% endblock %}
